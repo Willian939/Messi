@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .barra-navegacao {
+            background-color: #0073e6;
+            padding: 1rem;
+        }
+        .barra-navegacao ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .barra-navegacao ul li {
+            margin: 0 1rem;
+        }
+        .barra-navegacao ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+        main img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+        .conteudo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+        }
+        .conteudo div {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .conteudo div img {
+            width: 500px;
+            height: 320px;
+            object-fit: cover;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+        .conteudo div h3 {
+            margin-top: 0;
+            color: #0073e6;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lionel Messi</h1>
+        <nav class="barra-navegacao">
+            <ul>
+                <li><a href="cor.html">Estádios dos times da carreira de Messi</a></li>
+                <li><a href="gols.html">Pênaltis com o Messi</a></li>
+                <li><a href="curiosidades.html">Curiosidades sobre Lionel Messi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="int.jpg" alt="Lionel Messi" class="img-fluid mb-4">
+        <p>Bem-vindo ao site dedicado ao gênio do futebol, Lionel Messi! Explore seus feitos incríveis e saiba mais sobre sua carreira.</p>
+        <div class="conteudo">
+            <div>
+                <h3>Conquistas</h3>
+                <p>Mais de 700 gols na carreira, 8 prêmios Ballon d'Or, e muitos títulos nacionais e internacionais.</p>
+                <img src="ouro.jpg" alt="Conquistas">
+            </div>
+            <div>
+                <h3>Estilo de Jogo</h3>
+                <p>Conhecido por sua habilidade, dribles e precisão nos chutes, Messi é considerado um dos melhores jogadores de todos os tempos.</p>
+                <img src="i.jpg" alt="Lionel Messi">
+            </div>
+            <div>
+                <h3>Vida Pessoal</h3>
+                <p>Lionel Messi se casou com Antonela Roccuzzo em 30 de junho de 2017, aos 30 anos. Eles têm três filhos: Thiago, Mateo e Ciro.</p>
+                <img src="fam.jpg" alt="Vida Pessoal">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Tudo sobre o Messi</p>
+    </footer>
+</body>
+</html>

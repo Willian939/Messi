@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estádios dos clubes</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d20000;
+            color: white;
+            padding: 20px 0;
+        }
+        main {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        button {
+            background-color: #d20000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #a00000;
+        }
+        .imagem-fluida {
+            width: 100%;
+            height: 110px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .linha {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .coluna {
+            width: 30%;
+        }
+        footer {
+            padding: 20px 0;
+        }
+        nav a {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #5a6268;
+        }
+        .descricao {
+            margin-top: 15px;
+            font-style: italic;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estádios de clubes que Messi jogou</h1>
+    </header>
+    <main>
+        <div class="linha">
+            <div class="coluna">
+                <img src="camp.jpg" alt="Camp Nou" class="imagem-fluida">
+                <p>Camp Nou</p>
+                <button onclick="toggleDescricao('descCampNou', '#9B1B30')">Ver Descrição</button>
+                <p id="descCampNou" class="descricao">Camp Nou: O icônico estádio do FC Barcelona, onde Messi fez história com seus recordes e títulos.</p>
+            </div>
+            <div class="coluna">
+                <img src="parc.jpg" alt="Parc des Princes" class="imagem-fluida">
+                <p>Parc des Princes</p>
+                <button onclick="toggleDescricao('descParcDesPrinces', '#003DA5')">Ver Descrição</button>
+                <p id="descParcDesPrinces" class="descricao">Parc des Princes: O estádio do Paris Saint-Germain, onde Messi continuou a brilhar após sua transferência.</p>
+            </div>
+            <div class="coluna">
+                <img src="mi.jpg" alt="DRV PNK Stadium" class="imagem-fluida">
+                <p>DRV PNK Stadium</p>
+                <button onclick="toggleDescricao('descDRV', '#ff69b4')">Ver Descrição</button>
+                <p id="descDRV" class="descricao">DRV PNK Stadium: O estádio do Inter Miami, onde Messi está atualmente mostrando sua magia.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Voltar para o Início</a>
+        </nav>
+    </footer>
+    <script>
+        function toggleDescricao(descId, color) {
+            const descElement = document.getElementById(descId);
+            if (descElement.style.display === "none" || descElement.style.display === "") {
+                descElement.style.display = "block";
+                document.body.style.backgroundColor = color;
+            } else {
+                descElement.style.display = "none";
+                document.body.style.backgroundColor = "#f0f8ff";
+            }
+        }
+    </script>
+</body>
+</html>

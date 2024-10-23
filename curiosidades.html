@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades sobre Messi</title>
+    <style>
+        body {
+            background-color: #f0f8ff; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cabecalho {
+            background-color: #0073e6; 
+            color: white; 
+            text-align: center; 
+            padding: 20px;
+        }
+        .botao-info {
+            background-color: #0073e6; 
+            border: none; 
+            color: white; 
+            padding: 15px 30px; 
+            cursor: pointer; 
+            margin: 20px 0; 
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .botao-info:hover {
+            background-color: #005bb5; 
+        }
+        .curiosidades {
+            display: none; 
+            margin: 20px auto; 
+            border: 1px solid #0073e6; 
+            padding: 20px; 
+            border-radius: 5px;
+            background-color: white;
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .rodape {
+            text-align: center; 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Curiosidades sobre Messi</h1>
+    </header>
+    <main class="container text-center my-4">
+        <button id="toggleCuriosities" class="botao-info">Mostrar Curiosidades</button>
+        <div id="curiosities" class="curiosidades">
+            <p>1. Messi começou a jogar futebol aos 5 anos.</p>
+            <img src="leo.jpg" alt="Messi jogando futebol aos 5 anos">
+            <p>2. Ele tem uma condição hormonal que afetou seu crescimento.</p>
+            <img src="anao.jpg" alt="Tratamento hormonal de Messi">
+            <p>3. Messi é o maior artilheiro da história do Barcelona.</p>
+            <img src="art.jpg" alt="Messi com troféus">
+        </div>
+    </main>
+    <footer class="rodape">
+        <nav>
+            <a href="index.html" class="botao-info">Voltar para o Início</a>
+        </nav>
+    </footer>
+    <script>
+        const toggleCuriositiesButton = document.getElementById('toggleCuriosities');
+        const curiositiesDiv = document.getElementById('curiosities');
+
+        toggleCuriositiesButton.addEventListener('click', function() {
+            if (curiositiesDiv.style.display === 'none' || curiositiesDiv.style.display === '') {
+                curiositiesDiv.style.display = 'block';
+                this.textContent = 'Esconder Curiosidades';
+            } else {
+                curiositiesDiv.style.display = 'none';
+                this.textContent = 'Mostrar Curiosidades';
+            }
+        });
+    </script>
+</body>
+</html>
